@@ -305,7 +305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306319482}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,8 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 1829978663}
-  DoorPrefab: {fileID: 3796835705429108391, guid: 26f6c0f7a9cd61244a474e6fdc86d21b, type: 3}
-  DoorP: {fileID: 1829978667}
 --- !u!50 &1159223176
 Rigidbody2D:
   serializedVersion: 4
@@ -628,7 +626,7 @@ GameObject:
   - component: {fileID: 1780994386}
   - component: {fileID: 1780994385}
   - component: {fileID: 1780994384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Missile Launche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
