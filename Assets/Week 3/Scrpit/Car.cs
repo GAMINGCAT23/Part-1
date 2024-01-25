@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,15 @@ public class Car : MonoBehaviour
     {
         acceleration = Input.GetAxis("Vertical");
         steering = Input.GetAxis("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            fowardSpeed = fowardSpeed * 2;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            fowardSpeed = fowardSpeed / 2;
+        }
     }
     private void FixedUpdate()
     {
@@ -27,5 +37,4 @@ public class Car : MonoBehaviour
         Vector2 force = transform.up * acceleration * fowardSpeed * Time.deltaTime;
         rigidbody.AddForce(force);
     }
-
 }
