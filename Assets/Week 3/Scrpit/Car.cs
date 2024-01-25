@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car : MonoBehaviour 
+public class Car : MonoBehaviour
 {
     float acceleration;
     float steering;
@@ -27,5 +27,4 @@ public class Car : MonoBehaviour
         Vector2 force = transform.up * acceleration * fowardSpeed * Time.deltaTime;
         rigidbody.AddForce(force);
     }
-    
 }
